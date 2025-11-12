@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rent Cars Koubaa — Location Voitures de Luxe</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #000000, #1c1c1c);
+      color: #f8f8f8;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #111, #222);
+      border-bottom: 3px solid #e5b80b;
+    }
+    header img {
+      width: 120px;
+      border-radius: 15px;
+      border: 2px solid #e5b80b;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #e5b80b;
+    }
+    header p {
+      color: #ccc;
+      font-size: 1.1em;
+    }
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #e5b80b;
+      border-bottom: 2px solid #e5b80b;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #e5b80b33;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card h3 {
+      margin: 0;
+      color: #fff;
+      font-size: 1.3em;
+    }
+    .card p {
+      color: #aaa;
+      font-size: 0.95em;
+      margin-top: 5px;
+    }
+    .price {
+      color: #e5b80b;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #e5b80b;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #e5b80b;
+      color: #bbb;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Logo Rent Cars">
+    <h1>Rent Cars Koubaa</h1>
+    <p>Location de voitures de luxe — Confort, puissance et élégance</p>
+  </header>
+
+  <section>
+    <h2>Nos Voitures de Luxe</h2>
+    <div class="cars">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606663889134-16c2bbf63064?auto=format&fit=crop&w=900&q=60" alt="Mercedes G63 AMG">
+        <div class="card-content">
+          <h3>Mercedes G63 AMG</h3>
+          <p>Puissance, luxe et design emblématique. Un 4x4 de prestige unique au monde.</p>
+          <div class="price">💰 2500 MAD / jour</div>
+          <a href="#" class="btn">Réserver</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1597007252893-0af1d511dcc2?auto=format&fit=crop&w=900&q=60" alt="BMW M5 Competition">
+        <div class="card-content">
+          <h3>BMW M5 Competition</h3>
+          <p>Berline sportive alliant confort, vitesse et technologie allemande.</p>
+          <div class="price">💰 2000 MAD / jour</div>
+          <a href="#" class="btn">Réserver</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1621072159971-45b8d4a9e2d3?auto=format&fit=crop&w=900&q=60" alt="Audi RS7">
+        <div class="card-content">
+          <h3>Audi RS7</h3>
+          <p>Élégance et performance : l’Audi RS7, un symbole de prestige moderne.</p>
+          <div class="price">💰 2200 MAD / jour</div>
+          <a href="#" class="btn">Réserver</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605522105540-5e3c3e6fded3?auto=format&fit=crop&w=900&q=60" alt="Mercedes Classe A AMG">
+        <div class="card-content">
+          <h3>Mercedes Classe A AMG</h3>
+          <p>Compacte sportive haut de gamme, idéale pour la ville avec style.</p>
+          <div class="price">💰 1600 MAD / jour</div>
+          <a href="#" class="btn">Réserver</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=60" alt="Range Rover Sport">
+        <div class="card-content">
+          <h3>Range Rover Sport</h3>
+          <p>Le SUV de luxe par excellence : confort, puissance et élégance britannique.</p>
+          <div class="price">💰 2400 MAD / jour</div>
+          <a href="#" class="btn">Réserver</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact & Réservation</h2>
+    <p>📧 Email : <a href="mailto:mohamedkoubaa@gmail.com" style="color:#e5b80b">mohamedkoubaa@gmail.com</a></p>
+    <p>📱 Téléphone : <a href="tel:+212682455446" style="color:#e5b80b">06 82 45 54 46</a></p>
+    <p>📍 Adresse : Tanger — à côté de Soco Alto</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rent Cars Koubaa — Tous droits réservés.  
+    <br>Service Premium de location de voitures de luxe à Tanger 🇲🇦
+  </footer>
+</body>
+</html>
