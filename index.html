@@ -267,6 +267,12 @@
 
   <script>
     // Simple interactions: open modal with selected vehicle
+    function openBooking(name, rate, btn){
+      document.getElementById('vehicle').value = name;
+      document.getElementById('rate').value = rate;
+      modal.style.display = 'flex';
+      document.getElementById('name').focus();
+    }
     const modal = document.getElementById('modal');
   
     function closeModal(){modal.style.display='none';}
@@ -303,6 +309,7 @@
   </script>
 </body>
 </html>
+
 
 
 
