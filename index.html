@@ -220,42 +220,48 @@
       </div>
       <p id="modal-sub" style="color:var(--muted);margin-top:0">Choisissez vos dates et renseignez vos coordonnées. Un membre de l'équipe confirmera votre réservation.</p>
 
-      <form id="booking-form" onsubmit="handleBooking(event)">
-        <div class="form-row" style="margin-bottom:8px">
-          <div class="field">
-            <label class="meta">Véhicule</label>
-            <input type="text" id="vehicle" readonly />
-          </div>
-          <div class="field">
-            <label class="meta">Tarif</label>
-            <input type="text" id="rate" readonly />
-          </div>
-        </div>
-        <div class="form-row" style="margin-bottom:8px">
-          <div class="field">
-            <label class="meta">Nom complet</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="field">
-            <label class="meta">Téléphone</label>
-            <input type="tel" id="phone" required />
-          </div>
-        </div>
-        <div class="form-row" style="margin-bottom:8px">
-          <div class="field">
-            <label class="meta">Date de début</label>
-            <input type="date" id="start" required />
-          </div>
-          <div class="field">
-            <label class="meta">Date de fin</label>
-            <input type="date" id="end" required />
-          </div>
-        </div>
-        <div style="margin-top:12px;display:flex;gap:10px;justify-content:flex-end">
-          <button type="button" class="btn secondary" onclick="closeModal()">Annuler</button>
-          <button type="submit" class="btn">Envoyer la demande</button>
-        </div>
-      </form>
+     <form id="booking-form" action="https://formspree.io/f/xkgkgklk" method="POST">
+  <div class="form-row" style="margin-bottom:8px">
+    <div class="field">
+      <label class="meta">Véhicule</label>
+      <input type="text" name="Véhicule" id="vehicle" readonly />
+    </div>
+    <div class="field">
+      <label class="meta">Tarif</label>
+      <input type="text" name="Tarif" id="rate" readonly />
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-bottom:8px">
+    <div class="field">
+      <label class="meta">Nom complet</label>
+      <input type="text" name="Nom complet" id="name" required />
+    </div>
+    <div class="field">
+      <label class="meta">Téléphone</label>
+      <input type="tel" name="Téléphone" id="phone" required />
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-bottom:8px">
+    <div class="field">
+      <label class="meta">Date de début</label>
+      <input type="date" name="Date début" id="start" required />
+    </div>
+    <div class="field">
+      <label class="meta">Date de fin</label>
+      <input type="date" name="Date fin" id="end" required />
+    </div>
+  </div>
+
+  <input type="hidden" name="_next" value="https://mohammedkoubaa2005-svg.github.io/RENT-CARS-KOUBAA/merci.html">
+
+  <div style="margin-top:12px;display:flex;gap:10px;justify-content:flex-end">
+    <button type="button" class="btn secondary" onclick="closeModal()">Annuler</button>
+    <button type="submit" class="btn">Envoyer la demande</button>
+  </div>
+</form>
+
     </div>
   </div>
 
@@ -296,4 +302,5 @@
   </script>
 </body>
 </html>
+
 
